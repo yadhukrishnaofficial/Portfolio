@@ -1,0 +1,305 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-section {
+            width: 50%;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .left-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .right-section {
+            width: 50%;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .right-section img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .right-section .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .menu .contact-btn {
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Hi, I am<br>Tomasz Gajda</h1>
+            <p>Front-end Developer / UI Designer</p>
+            <div class="social-icons">
+                <a href="#" target="_blank">@</a>
+                <a href="#" target="_blank">F</a>
+                <a href="#" target="_blank">L</a>
+                <a href="#" target="_blank">I</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="menu">
+                <a href="#about">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact" class="contact-btn">Contact Me</a>
+            </div>
+            <img src="https://via.placeholder.com/200" alt="Profile Image">
+            <p style="text-align: center; margin-top: 20px; max-width: 300px;">This is not my photo, but it seems you're here to get one just like this.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Reset body margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* About Section Styling */
+        .about-section {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-section .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-section .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="about-section">
+        <h1>About Me</h1>
+        <p>
+            I am Yadu Krishna, a Python full-stack developer with expertise in front-end and back-end technologies 
+            and proficiency in PostgreSQL database management. Having successfully completed a comprehensive Python 
+            full-stack development course, I am passionate about building efficient, scalable, and user-focused web solutions. 
+            I am eager to take on new challenges and contribute to innovative projects.
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        /* Reset body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Container for project cards */
+        .project-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Card Styling */
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-card .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        .project-card p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-card .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 style="text-align: center; margin-bottom: 40px; color: #007BFF;">My Projects</h1>
+        <div class="project-container">
+            <!-- Card 1 -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x180" alt="Project 1">
+                <div class="content">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website built using HTML and CSS to showcase my skills and projects.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x180" alt="Project 2">
+                <div class="content">
+                    <h3>SwaynStyle</h3>
+                    <p>An e-commerce website for my clothing brand, featuring responsive design and user-friendly navigation.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x180" alt="Project 3">
+                <div class="content">
+                    <h3>Face Recognition System</h3>
+                    <p>A Python-based project that implements a face recognition algorithm for identity verification.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
