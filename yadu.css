@@ -267,3 +267,202 @@ h3{
     width: auto;
     height: 32px;
 }
+/* Base styles (keeping your existing styles) */
+* {
+    font-family: "Josefin Sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Your existing CSS remains the same until the media queries */
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    nav {
+        justify-content: center;
+        padding: 15px 10px;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    /* Banner Section */
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .right-section {
+        min-height: 300px;
+        background-size: contain;
+    }
+
+    .right-section img {
+        width: 150px;
+    }
+
+    /* About Section */
+    .about {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .aboutsection {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .aboutsection p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .About_container {
+        flex-direction: column;
+    }
+
+    .Tron, .Inventron {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .Tron p, .Inventron p {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    /* Projects Section */
+    .Project_container {
+        padding: 0 15px;
+    }
+
+    .project_card {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .project_card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Skills Section */
+    .skill_container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .skill_list img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill_list p {
+        font-size: 0.9em;
+    }
+
+    /* Contact Section */
+    .contact {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .contact_form {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .contact_form input,
+    .contact_form textarea {
+        width: 100%;
+    }
+
+    .contact_form div {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .contact_form button {
+        width: 40%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-social {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .footer-social img {
+        height: 24px;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 0.9em;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+    .left-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .skill_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_form {
+        padding: 10px;
+    }
+
+    .contact_form input,
+    .contact_form textarea {
+        height: 25px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* Fix for horizontal overflow */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
